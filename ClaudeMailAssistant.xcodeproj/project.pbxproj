@@ -6,6 +6,14 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		5865CD892CE395D700162B4F /* ClaudeMailExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 5865CD6F2CE395D700162B4F /* ClaudeMailExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		5865CD912CE3970E00162B4F /* MailKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5865CD902CE3970E00162B4F /* MailKit.framework */; };
+		5865CD932CE3971C00162B4F /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5865CD922CE3971C00162B4F /* SwiftUI.framework */; };
+		5865CD952CE3972700162B4F /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5865CD942CE3972700162B4F /* AppKit.framework */; };
+		5865CDA32CE4A49200162B4F /* License.md in Resources */ = {isa = PBXBuildFile; fileRef = 5865CDA22CE4A49200162B4F /* License.md */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		5865CD4F2CE394F400162B4F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -21,13 +29,49 @@
 			remoteGlobalIDString = 5865CD3C2CE394F200162B4F;
 			remoteInfo = ClaudeMailAssistant;
 		};
+		5865CD872CE395D700162B4F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5865CD352CE394F200162B4F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5865CD6E2CE395D700162B4F;
+			remoteInfo = ClaudeMailExtension;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		5865CD8E2CE395D700162B4F /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				5865CD892CE395D700162B4F /* ClaudeMailExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		5865CD3D2CE394F200162B4F /* ClaudeMailAssistant.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ClaudeMailAssistant.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5865CD4E2CE394F400162B4F /* ClaudeMailAssistantTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ClaudeMailAssistantTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5865CD582CE394F400162B4F /* ClaudeMailAssistantUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ClaudeMailAssistantUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5865CD6F2CE395D700162B4F /* ClaudeMailExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = ClaudeMailExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		5865CD902CE3970E00162B4F /* MailKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MailKit.framework; path = System/Library/Frameworks/MailKit.framework; sourceTree = SDKROOT; };
+		5865CD922CE3971C00162B4F /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		5865CD942CE3972700162B4F /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		5865CDA22CE4A49200162B4F /* License.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = License.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		5865CD8A2CE395D700162B4F /* Exceptions for "ClaudeMailExtension" folder in "ClaudeMailExtension" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 5865CD6E2CE395D700162B4F /* ClaudeMailExtension */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		5865CD3F2CE394F200162B4F /* ClaudeMailAssistant */ = {
@@ -43,6 +87,14 @@
 		5865CD5B2CE394F400162B4F /* ClaudeMailAssistantUITests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = ClaudeMailAssistantUITests;
+			sourceTree = "<group>";
+		};
+		5865CD702CE395D700162B4F /* ClaudeMailExtension */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				5865CD8A2CE395D700162B4F /* Exceptions for "ClaudeMailExtension" folder in "ClaudeMailExtension" target */,
+			);
+			path = ClaudeMailExtension;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -69,15 +121,28 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		5865CD6C2CE395D700162B4F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5865CD952CE3972700162B4F /* AppKit.framework in Frameworks */,
+				5865CD932CE3971C00162B4F /* SwiftUI.framework in Frameworks */,
+				5865CD912CE3970E00162B4F /* MailKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		5865CD342CE394F200162B4F = {
 			isa = PBXGroup;
 			children = (
+				5865CDA22CE4A49200162B4F /* License.md */,
 				5865CD3F2CE394F200162B4F /* ClaudeMailAssistant */,
 				5865CD512CE394F400162B4F /* ClaudeMailAssistantTests */,
 				5865CD5B2CE394F400162B4F /* ClaudeMailAssistantUITests */,
+				5865CD702CE395D700162B4F /* ClaudeMailExtension */,
+				5865CD8F2CE3970E00162B4F /* Frameworks */,
 				5865CD3E2CE394F200162B4F /* Products */,
 			);
 			sourceTree = "<group>";
@@ -88,8 +153,19 @@
 				5865CD3D2CE394F200162B4F /* ClaudeMailAssistant.app */,
 				5865CD4E2CE394F400162B4F /* ClaudeMailAssistantTests.xctest */,
 				5865CD582CE394F400162B4F /* ClaudeMailAssistantUITests.xctest */,
+				5865CD6F2CE395D700162B4F /* ClaudeMailExtension.appex */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		5865CD8F2CE3970E00162B4F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5865CD942CE3972700162B4F /* AppKit.framework */,
+				5865CD922CE3971C00162B4F /* SwiftUI.framework */,
+				5865CD902CE3970E00162B4F /* MailKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -102,10 +178,12 @@
 				5865CD392CE394F200162B4F /* Sources */,
 				5865CD3A2CE394F200162B4F /* Frameworks */,
 				5865CD3B2CE394F200162B4F /* Resources */,
+				5865CD8E2CE395D700162B4F /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				5865CD882CE395D700162B4F /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
 				5865CD3F2CE394F200162B4F /* ClaudeMailAssistant */,
@@ -163,6 +241,28 @@
 			productReference = 5865CD582CE394F400162B4F /* ClaudeMailAssistantUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		5865CD6E2CE395D700162B4F /* ClaudeMailExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5865CD8B2CE395D700162B4F /* Build configuration list for PBXNativeTarget "ClaudeMailExtension" */;
+			buildPhases = (
+				5865CD6B2CE395D700162B4F /* Sources */,
+				5865CD6C2CE395D700162B4F /* Frameworks */,
+				5865CD6D2CE395D700162B4F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				5865CD702CE395D700162B4F /* ClaudeMailExtension */,
+			);
+			name = ClaudeMailExtension;
+			packageProductDependencies = (
+			);
+			productName = ClaudeMailExtension;
+			productReference = 5865CD6F2CE395D700162B4F /* ClaudeMailExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -184,6 +284,10 @@
 						CreatedOnToolsVersion = 16.1;
 						TestTargetID = 5865CD3C2CE394F200162B4F;
 					};
+					5865CD6E2CE395D700162B4F = {
+						CreatedOnToolsVersion = 16.1;
+						LastSwiftMigration = 1610;
+					};
 				};
 			};
 			buildConfigurationList = 5865CD382CE394F200162B4F /* Build configuration list for PBXProject "ClaudeMailAssistant" */;
@@ -203,6 +307,7 @@
 				5865CD3C2CE394F200162B4F /* ClaudeMailAssistant */,
 				5865CD4D2CE394F400162B4F /* ClaudeMailAssistantTests */,
 				5865CD572CE394F400162B4F /* ClaudeMailAssistantUITests */,
+				5865CD6E2CE395D700162B4F /* ClaudeMailExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -212,6 +317,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5865CDA32CE4A49200162B4F /* License.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -223,6 +329,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		5865CD562CE394F400162B4F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5865CD6D2CE395D700162B4F /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -253,6 +366,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		5865CD6B2CE395D700162B4F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -265,6 +385,11 @@
 			isa = PBXTargetDependency;
 			target = 5865CD3C2CE394F200162B4F /* ClaudeMailAssistant */;
 			targetProxy = 5865CD592CE394F400162B4F /* PBXContainerItemProxy */;
+		};
+		5865CD882CE395D700162B4F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5865CD6E2CE395D700162B4F /* ClaudeMailExtension */;
+			targetProxy = 5865CD872CE395D700162B4F /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -509,6 +634,65 @@
 			};
 			name = Release;
 		};
+		5865CD8C2CE395D700162B4F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = ClaudeMailExtension/ClaudeMailExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = XW874LPGJ5;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ClaudeMailExtension/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = ClaudeMailExtension;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 13.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mail.ClaudeMailAssistant.ClaudeMailExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		5865CD8D2CE395D700162B4F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = ClaudeMailExtension/ClaudeMailExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = XW874LPGJ5;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ClaudeMailExtension/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = ClaudeMailExtension;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 13.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mail.ClaudeMailAssistant.ClaudeMailExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -544,6 +728,15 @@
 			buildConfigurations = (
 				5865CD692CE394F400162B4F /* Debug */,
 				5865CD6A2CE394F400162B4F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5865CD8B2CE395D700162B4F /* Build configuration list for PBXNativeTarget "ClaudeMailExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5865CD8C2CE395D700162B4F /* Debug */,
+				5865CD8D2CE395D700162B4F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
